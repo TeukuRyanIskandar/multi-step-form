@@ -1,14 +1,17 @@
-// Footer.tsx
 "use client"
 
 import Link from "next/link"
 import { Button } from "../ui/button"
+import { mdiHome } from '@mdi/js';
+import Icon from '@mdi/react';
 
 function FooterOne({ onNext }: { onNext: () => void }) {
   return (
     <>
       <Button variant="secondary" asChild>
-        <Link href="/">Home</Link>
+        <Link href="/">
+          <Icon path={mdiHome} size={1} />
+        </Link>
       </Button>
       <Button variant="default" onClick={onNext}>Next</Button>
     </>

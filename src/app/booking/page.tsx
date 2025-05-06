@@ -3,11 +3,10 @@
 import { useMultiStepForm } from "@/hooks/useMultiStepForm";
 import { cardData } from "@/data/CardData";
 import { CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-import { FooterOne, FooterTwo, FooterThree } from "@/components/dashboard/Footer";
 
 export default function BookingPage() {
 
-  const { steps, currentStepIndex, nextStep, previousStep } = useMultiStepForm(cardData)
+  const { currentStepIndex, nextStep, previousStep } = useMultiStepForm(cardData)
   const currentCard = cardData[currentStepIndex];
 
   return (

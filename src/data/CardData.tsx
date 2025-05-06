@@ -1,4 +1,6 @@
 import { FooterOne, FooterTwo, FooterThree } from "@/components/dashboard/Footer";
+import SelectDate from "@/components/dashboard/SelectDate";
+import SelectPayment from "@/components/dashboard/SelectPayment";
 
 export const cardData = [
   {
@@ -14,7 +16,7 @@ export const cardData = [
     step: "Session",
     title: "Pick a date & time",
     subtitle: "Choose a date and time that suits you",
-    body: <p>add date picker</p>,
+    body: <SelectDate />,
     footer: ({ onNext, onBack }: any) => <FooterTwo onNext={onNext} onBack={onBack} />,
   },
   {
@@ -30,7 +32,7 @@ export const cardData = [
     step: "Payment",
     title: "Payment",
     subtitle: "Please Select a Payment Method",
-    body: <p>add payment selector</p>,
+    body: <SelectPayment/>,
     footer: ({ onNext, onBack }: any) => <FooterTwo onNext={onNext} onBack={onBack} />,
   },
   {
