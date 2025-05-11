@@ -12,7 +12,7 @@ export default function BookingPage() {
   return (
     <>
       <CardHeader>
-        <CardTitle>{currentCard.title}</CardTitle>
+        <CardTitle className="text-2xl">{currentCard.title}</CardTitle>
         <CardDescription>{currentCard?.subtitle}</CardDescription>
       </CardHeader>
       <CardContent>{currentCard.body}</CardContent>

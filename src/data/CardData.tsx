@@ -1,14 +1,16 @@
+import DetailsForm from "@/components/dashboard/DetailsForm";
 import { FooterOne, FooterTwo, FooterThree } from "@/components/dashboard/Footer";
 import SelectDate from "@/components/dashboard/SelectDate";
 import SelectPayment from "@/components/dashboard/SelectPayment";
+import SelectTheme from "@/components/dashboard/SelectTheme";
 
-export const cardData = [
+export const cardData= [
   {
     id: 0,
     step: "Choose theme",
     title: "Choose your theme",
     subtitle: "Choose your preferred studio",
-    body: <p>select theme from images</p>,
+    body: <SelectTheme />,
     footer: ({ onNext }: { onNext: () => void }) => <FooterOne onNext={onNext} />,
   },
   {
@@ -24,7 +26,7 @@ export const cardData = [
     step: "Your Details",
     title: "Your Details",
     subtitle: "Please fill in your details",
-    body: <p>add details form</p>,
+    body: <DetailsForm />,
     footer: ({ onNext, onBack }: any) => <FooterTwo onNext={onNext} onBack={onBack} />,
   },
   {
